@@ -6,7 +6,7 @@
 </template>
 
 <script>
-  import Danawa from "./PortfolioContents/Danawa";
+  import Danawa from "./portfolioContents/Danawa";
 
   export default {
     name: 'Portfolio',
