@@ -1,12 +1,12 @@
 <template>
-    <div id="careers">
-      careers!!
+    <div id="qna">
+      QNA!!!
     </div>
 </template>
 
 <script>
     export default {
-        name: 'Careers'
+        name: "Qna"
     }
 </script>
 

@@ -39,7 +39,7 @@
     }
 
     .header-fix-top-margin {
-      padding: 56px;
+      padding-top: 56px;
     }
   }
 

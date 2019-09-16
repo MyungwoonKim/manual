@@ -22,11 +22,11 @@ export default new Vuex.Store({
      * @param state
      */
     topBtnAllFalse(state) {
-      state.header.topBtn.main = false;
-      state.header.topBtn.skills = false;
-      state.header.topBtn.careers = false;
-      state.header.topBtn.portfolio = false;
-      state.header.topBtn.qna = false;
+      state.header.topBtn.main = false
+      state.header.topBtn.skills = false
+      state.header.topBtn.careers = false
+      state.header.topBtn.portfolio = false
+      state.header.topBtn.qna = false
     },
     /**
      * 상단 해더 버튼 하이라이트
@@ -35,15 +35,15 @@ export default new Vuex.Store({
      */
     topBtnHighlight(state, topBtn) {
       if (topBtn == 'main') {
-        state.header.topBtn.main = true;
+        state.header.topBtn.main = true
       } else if (topBtn == 'skills') {
-        state.header.topBtn.skills = true;
+        state.header.topBtn.skills = true
       } else if (topBtn == 'careers') {
-        state.header.topBtn.careers = true;
+        state.header.topBtn.careers = true
       } else if (topBtn == 'portfolio') {
-        state.header.topBtn.portfolio = true;
+        state.header.topBtn.portfolio = true
       } else if (topBtn == 'qna') {
-        state.header.topBtn.qna = true;
+        state.header.topBtn.qna = true
       }
     }
   },
