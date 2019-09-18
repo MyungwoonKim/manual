@@ -1,6 +1,6 @@
 <template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
     <div id="topContent" class="bg-dark">
-      <b-jumbotron class="base-width" bg-variant="dark" text-variant="white">
+      <b-jumbotron class="base-width top-margin" bg-variant="dark" text-variant="white">
         <template v-slot:header class="aabcs">
           <transition name="slide-fade">
             <div v-if="show" class="mobile-top-typography">
@@ -34,15 +34,18 @@
 </script>
 
 <style scoped>
-  #topContent {
-    text-align: left;
-  }
-
   .sub-title-typography:first-child {
     margin-top: 30px;
   }
 
+  .top-margin {
+    margin: 0 auto;
+  }
+
   @media screen and (max-width: 763px) {
+    #topContent {
+      text-align: left;
+    }
     .mobile-top-typography {
       max-width: 300px;
     }
