@@ -13,7 +13,8 @@ export default new Vuex.Store({
         careers: false,
         portfolio: false,
         qna: false
-      }
+      },
+      skipEvent: false
     }
   },
   mutations: {
@@ -45,6 +46,14 @@ export default new Vuex.Store({
       } else if (topBtn == 'qna') {
         state.header.topBtn.qna = true
       }
+    },
+    /**
+     * 상단 이벤트 스킵 여부
+     * @param state
+     * @param isSkip
+     */
+    skipEventHandler(state, isSkip) {
+      state.header.skipEvent = isSkip
     }
   },
   actions: {

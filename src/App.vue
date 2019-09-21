@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Header class="header-fix"></Header>
-    <Contents class="header-fix-top-margin"></Contents>
+    <Header></Header>
+    <Contents></Contents>
     <Footer></Footer>
   </div>
 </template>
@@ -31,17 +31,4 @@
     max-width: 1024px;
     margin: 0 auto;
   }
-
-  @media screen and (min-width: 1024px) {
-    .header-fix {
-      position:fixed;
-      width: 100%;
-    }
-
-    .header-fix-top-margin {
-      padding-top: 56px;
-    }
-  }
-
-
 </style>

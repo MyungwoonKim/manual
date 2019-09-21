@@ -6,7 +6,7 @@
 
 <script>
     export default {
-        name: "Qna"
+      name: "Qna"
     }
 </script>
 
