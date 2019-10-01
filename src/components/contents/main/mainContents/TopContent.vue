@@ -42,6 +42,11 @@
     margin: 0 auto;
   }
 
+  .mobile-top-typography {
+    font-size: 70px;
+    line-height: 120%;
+  }
+
   @media screen and (max-width: 763px) {
     #topContent {
       text-align: left;

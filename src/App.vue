@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
+  <v-app id="app">
     <Header></Header>
     <Contents></Contents>
     <Footer></Footer>
-  </div>
+  </v-app>
 </template>
 <script>
   import Header from "./views/Header";
