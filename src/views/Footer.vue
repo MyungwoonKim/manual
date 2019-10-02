@@ -1,52 +1,68 @@
 <template>
-  <footer class="header">
-    <v-footer
-      dark
-      padless
-    >
-      <v-card
-        flat
-        tile
-        class="indigo lighten-1 white--text text-center"
+  <v-footer
+    padless
+  >
+  <v-card
+    id="qna"
+    flat
+    tile
+    class="black--text text-center"
+  >
+
+    <v-card-text>
+      <v-btn
+        v-for="(icon, index) in icons"
+        :key="icon"
+        class="mx-4 black--text"
+        @click="moveLink(index)"
+        icon
       >
-        <v-card-text>
-          <v-btn
-            v-for="icon in icons"
-            :key="icon"
-            class="mx-4 white--text"
-            icon
-          >
-            <v-icon size="24px">{{ icon }}</v-icon>
-          </v-btn>
-        </v-card-text>
+        <v-icon size="24px">{{ icon }}</v-icon>
+      </v-btn>
+    </v-card-text>
 
-        <v-card-text class="white--text pt-0">
-          Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-        </v-card-text>
+    <v-divider></v-divider>
 
-        <v-divider></v-divider>
+    <v-card-text class="black--text pt-0">
+      효율적으로 짠 코드로 사용자의 경험이 증대될 때, 새로운 방식의 개발을 진행 할 때
+      가장 성취감을 느끼며, 성취감을 위해 노력하는 개발자 김명운입니다.
+    </v-card-text>
 
-        <v-card-text class="white--text">
-          {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-        </v-card-text>
-      </v-card>
-      </v-footer>
-  </footer>
+    <v-card-text class="black--text">
+      {{ new Date().getFullYear() }} — <strong>k7y7mn@gmail.com</strong>
+    </v-card-text>
+  </v-card>
+  </v-footer>
 </template>
 
 <script>
   export default {
     name: 'Footer',
-    data(){
-      return {
-        icons: [
-          'fab fa-facebook',
-          'fab fa-twitter',
-          'fab fa-google-plus',
-          'fab fa-linkedin',
-          'fab fa-instagram'
-        ],
+    data: () => ({
+      icons: [
+        'fab fa-instagram',
+        'fab fa-github',
+        'fab fa-google',
+      ],
+      iconLink: [
+        'https://www.instagram.com/k7y7mn/',
+        'https://github.com/MyungwoonKim/manual',
+        'mailto:k7y7mn@gmail.com'
+      ]
+    }),
+    methods: {
+      moveLink(index) {
+        let url = this.iconLink[index];
+        window.location.href = url;
       }
     }
   }
 </script>
+
+<style>
+  #qna {
+    padding-top: 40px;
+    background-color: #fafafa;
+    width: 100%;
+  }
+</style>

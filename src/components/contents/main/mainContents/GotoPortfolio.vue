@@ -9,7 +9,7 @@
           <v-img id="danawa-img" src="https://cdn.vuetifyjs.com/images/cards/forest-art.jpg"></v-img>
 
           <v-card-text>
-            <h2 class="title black--text">다나와 포트폴리오 보기</h2>
+            <h2 class="title black--text">다나와 포트롤리오 보기</h2>
           </v-card-text>
 
           <v-fade-transition>
@@ -18,10 +18,8 @@
               absolute
               color="#FFF"
             >
-              <v-btn>
-                <router-link class="portfolio-link" to="/portfolio">
-                  포트폴리오 보러가기
-                </router-link>
+              <v-btn class="portfolio-link" to="/portfolio">
+                포트폴리오 보러가기
               </v-btn>
             </v-overlay>
           </v-fade-transition>
@@ -50,6 +48,5 @@
   .portfolio-link {
     color: white;
     font-weight: bold;
-    text-decoration: none;
   }
 </style>
