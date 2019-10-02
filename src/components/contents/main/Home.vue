@@ -4,58 +4,6 @@
     <skills></skills>
     <careers></careers>
     <goto-portfolio></goto-portfolio>
-    <pre>
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-      aaa
-    </pre>
-    <qna></qna>
   </div>
 </template>
 
@@ -64,7 +12,6 @@
   import Skills from "./mainContents/Skills";
   import Careers from "./mainContents/Careers";
   import GotoPortfolio from "./mainContents/GotoPortfolio";
-  import Qna from "./mainContents/Qna";
 
   export default {
     name: 'Home',
@@ -73,7 +20,6 @@
       Skills: Skills,
       Careers: Careers,
       GotoPortfolio: GotoPortfolio,
-      Qna: Qna
     },
     mounted() {
       this.$nextTick(() => {

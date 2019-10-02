@@ -69,8 +69,6 @@
             document.getElementById('careers').scrollIntoView(true);
           } else if (isHighlight == 'qna') {
             document.getElementById('qna').scrollIntoView(true);
-          } else if (isHighlight == 'portfolio') {
-            this.$store.commit('skipEventHandler', true);
           } else {
             document.getElementById('app').scrollIntoView(true);
           }

@@ -123,7 +123,7 @@
 
 <style scoped>
   #careers {
-    padding: 40px 0 40px 0;
+    padding: 40px 0 0 0;
   }
 
   #careers-total-count-pc {

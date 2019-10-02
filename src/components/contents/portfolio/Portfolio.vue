@@ -12,6 +12,9 @@
     name: 'Portfolio',
     components: {
       Danawa: Danawa
+    },
+    created() {
+      this.$store.commit('skipEventHandler', true);
     }
   }
 </script>
