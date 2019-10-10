@@ -27,7 +27,7 @@
   }
 
   .base-width {
-    max-width: 1024px;
+    max-width: 1185px;
     margin: 0 auto;
   }
 </style>

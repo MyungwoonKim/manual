@@ -39,7 +39,7 @@
         return {
           careers: {
             startDate: '2017/09/01 09:00:00',
-            date: '60년차'
+            date: '2년 1개월 19일 9시 42분 10초'
           },
           years: [
             {

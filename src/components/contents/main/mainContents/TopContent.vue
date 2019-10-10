@@ -1,21 +1,39 @@
-<template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
+<template>
     <div id="topContent" class="bg-dark">
-      <b-jumbotron class="base-width top-margin" bg-variant="dark" text-variant="white">
-        <template v-slot:header class="aabcs">
+      <v-parallax
+        dark
+        height="600"
+        src="../../../../assets/main/topContent/top_title_img.jpg"
+      >
+        <v-row
+          align="end"
+          justify="center"
+        >
           <transition name="slide-fade">
             <div v-if="show" class="mobile-top-typography">
               Hello, Develop!
             </div>
           </transition>
-        </template>
-        <template v-slot:lead>
+        </v-row>
+        <v-row
+          align="start"
+          justify="center"
+        >
           <transition name="slide-fade">
             <div v-if="show" class="sub-title-typography">
               Myungwoon's Portfolio Blog For History
             </div>
           </transition>
-        </template>
-      </b-jumbotron>
+        </v-row>
+        <v-row
+          align="start"
+          justify="center"
+        >
+          <transition name="slide-fade">
+            <v-btn to="/portfolio" large color="primary">포트폴리오 보러가기</v-btn>
+          </transition>
+        </v-row>
+      </v-parallax>
     </div>
 </template>
 
@@ -38,8 +56,8 @@
     margin-top: 30px;
   }
 
-  .top-margin {
-    margin: 0 auto;
+  .sub-title-typography {
+    font-size: 20px;
   }
 
   .mobile-top-typography {
