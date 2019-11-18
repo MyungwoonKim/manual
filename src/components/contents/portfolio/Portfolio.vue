@@ -6,12 +6,15 @@
 </template>
 
 <script>
-  import Danawa from "./PortfolioContents/Danawa";
+  import Danawa from "./portfolioContents/Danawa";
 
   export default {
     name: 'Portfolio',
     components: {
       Danawa: Danawa
+    },
+    created() {
+      this.$store.commit('skipEventHandler', true);
     }
   }
 </script>
